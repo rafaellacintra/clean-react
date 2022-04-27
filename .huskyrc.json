@@ -1,5 +1,6 @@
 {
   "hooks": {
-    "pew-commit": "lint-staged"
+    "pew-commit": "lint-staged",
+    "pre-push": "yarn test:ci"
   }
 }
