@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pew-commit": "lint-staged"
+  }
+}
