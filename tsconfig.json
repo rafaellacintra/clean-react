@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "types": [
+      "node"
+    ],
     "target": "es6",
     "lib": [
       "dom",
@@ -18,10 +21,10 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "noEmit": true
   },
   "include": [
-    "src"
+    "src/**/*"
   ]
 }
