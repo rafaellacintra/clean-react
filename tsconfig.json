@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "types": [
+      "jest",
       "node"
     ],
     "target": "es6",
@@ -21,10 +22,9 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true
   },
   "include": [
-    "src/**/*"
+    "src"
   ]
 }
