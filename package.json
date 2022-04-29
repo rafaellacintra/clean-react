@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "test": "jest --passWithNoTests",
-    "test:watch": "yarn test -- --watch",
-    "test:staged": "yarn test -- --findRelatedTests",
+    "test": "jest --passWithNoTests --maxWorkers=50%",
+    "test:watch": "yarn test -- --watch --maxWorkers=50%",
+    "test:staged": "yarn test -- --findRelatedTests ",
     "test:ci": "yarn test -- --coverage"
   },
   "license": "ISC",
