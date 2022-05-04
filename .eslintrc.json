@@ -1,6 +1,6 @@
 {
   "root": true,
-  "plugins": ["eslint-plugin-import-helpers"],
+  "plugins": ["eslint-plugin-import-helpers", "@typescript-eslint"],
   "extends": "standard-with-typescript",
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

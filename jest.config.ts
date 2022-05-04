@@ -1,4 +1,4 @@
-import type { Config } from '@jest/types';
+import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
   roots: ["<rootDir>/src"],
@@ -15,13 +15,11 @@ const config: Config.InitialOptions = {
   coverageDirectory: 'coverage',
   coverageProvider: 'babel',
   testEnvironment: 'node',
-  transform: {
-    '.+\.ts$': 'ts-jest'
-  },
+  transform: {'.+\.ts$': 'ts-jest'},
   moduleNameMapper: {
     '@/tests/(.*)': '<rootDir>/tests/$1',
     '@/(.*)': '<rootDir>/src/$1',
     '\\.scss$': 'identity-obj-proxy'
   }
 };
-export default config;
+export default config
