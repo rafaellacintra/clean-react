@@ -1,15 +1,8 @@
 {
   "compilerOptions": {
-    "types": [
-      "jest",
-      "node"
-    ],
+    "types": ["jest", "node"],
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -17,19 +10,14 @@
     "rootDir": "src",
     "baseUrl": "src",
     "paths": {
-      "@/*": [
-        "*"
-      ]
+      "@/*": ["*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "noEmit": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
