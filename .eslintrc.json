@@ -1,11 +1,36 @@
 {
+  "root": true,
+  "plugins": ["eslint-plugin-import-helpers"],
   "extends": "standard-with-typescript",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/script-boolean-expressions": "off",
-    "@typescript-eslint/camelcase": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react/", "/^redux/"],
+          "/styled-components/",
+          "module",
+          "/prop-types/",
+          "/^~/pages/",
+          "/^~/components/",
+          "/^@//",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   }
 }
