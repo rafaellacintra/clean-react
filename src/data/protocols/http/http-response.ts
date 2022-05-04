@@ -8,7 +8,7 @@ export enum HttpStatusCode {
 
 }
 
-export type HttpReponse = {
+export type HttpReponse<T> = {
   statusCode: number
-  body?: any
+  body?: T
 }
